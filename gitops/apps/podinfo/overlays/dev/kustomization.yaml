@@ -7,6 +7,5 @@ commonLabels:
   owner: platform-team
 resources:
   - ../../base
-  - image-update.yaml
 patches:
   - path: patch-deployment.yaml
