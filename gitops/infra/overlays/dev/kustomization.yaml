@@ -6,3 +6,5 @@ resources:
   - namespace.yaml
   - limitrange.yaml
   - resourcequota.yaml
+  - ingress-nginx-repository.yaml
+  - ingress-nginx-release.yaml
