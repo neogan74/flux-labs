@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: podinfo
-          image: ghcr.io/stefanprodan/podinfo:6.5.3 # {"$imagepolicy": "flux-system:podinfo-latest"}
+          image: ghcr.io/stefanprodan/podinfo:6.10.2 # {"$imagepolicy": "flux-system:podinfo-latest"}
           env:
             - name: PODINFO_UI_MESSAGE
               value: "Hello from dev"
