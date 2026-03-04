@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../dev
+  - ingress-nginx-repository.yaml
+  - ingress-nginx-release.yaml
+  - serviceaccount-team-a.yaml
+  - role-team-a.yaml
+  - rolebinding-team-a.yaml
+  - networkpolicy-team-a.yaml
+  - flux-deployer-sa.yaml
+  - flux-deployer-role.yaml
+  - flux-deployer-rolebinding.yaml
+  - prometheus-community-repository.yaml
+  - kube-prometheus-values-configmap.yaml
+  - kube-prometheus-release.yaml
+  - flagger-repository.yaml
+  - flagger-release.yaml
+  - kyverno-repository.yaml
+  - kyverno-release.yaml
+  - require-owner-label-policy.yaml

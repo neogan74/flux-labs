@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dev-podinfo
+  namespace: dev
+spec:
+  template:
+    metadata:
+      labels:
+        owner: platform-team
+    spec:
+      serviceAccountName: team-a

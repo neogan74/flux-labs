@@ -1,0 +1,16 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: prod-app-podinfo
+  namespace: flux-system
+spec:
+  interval: 3m
+  path: ./gitops/apps/podinfo/overlays/prod
+  prune: true
+  timeout: 4m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  targetNamespace: prod
+  dependsOn:
+    - name: prod-infra

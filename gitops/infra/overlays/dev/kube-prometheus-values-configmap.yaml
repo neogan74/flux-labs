@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kube-prometheus-values
+  namespace: flux-system
+data:
+  values.yaml: |
+    prometheus:
+      prometheusSpec:
+        serviceMonitorSelectorNilUsesHelmValues: false
+        serviceMonitorSelector: {}
+    grafana:
+      defaultDashboardsEnabled: true
+    additionalServiceMonitors:
+      - name: flux-system
+        selector:
+          matchLabels:
+            app.kubernetes.io/part-of: flux
+        namespaceSelector:
+          matchNames:
+            - flux-system
+        endpoints:
+          - port: http-prom
+            interval: 30s
