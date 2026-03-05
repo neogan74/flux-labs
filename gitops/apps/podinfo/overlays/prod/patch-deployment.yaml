@@ -11,7 +11,7 @@ spec:
           image: ghcr.io/stefanprodan/podinfo:6.5.3
           env:
             - name: PODINFO_UI_MESSAGE
-              value: "Hello from prod"
+              value: "Promotion wave 2026-03-05"
           resources:
             requests:
               cpu: 150m
