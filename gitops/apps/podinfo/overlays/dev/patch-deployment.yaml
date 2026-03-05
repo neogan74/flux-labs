@@ -6,6 +6,7 @@ spec:
   replicas: 2
   template:
     spec:
+      serviceAccountName: team-a
       containers:
         - name: podinfo
           image: ghcr.io/stefanprodan/podinfo:6.10.2 # {"$imagepolicy": "flux-system:podinfo-latest"}

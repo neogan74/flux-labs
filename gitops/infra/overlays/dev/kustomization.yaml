@@ -6,3 +6,7 @@ resources:
   - limitrange.yaml
   - resourcequota.yaml
   - secrets.yaml
+  - serviceaccount-team-a.yaml
+  - role-team-a.yaml
+  - rolebinding-team-a.yaml
+  - networkpolicy-team-a.yaml
