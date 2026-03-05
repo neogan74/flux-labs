@@ -8,5 +8,6 @@ commonLabels:
 resources:
   - ../../base
   - canary.yaml
+  - ingress.yaml
 patches:
   - path: patch-deployment.yaml
