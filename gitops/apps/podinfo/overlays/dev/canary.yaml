@@ -8,6 +8,10 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: dev-podinfo
+  ingressRef:
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    name: dev-podinfo
   progressDeadlineSeconds: 600
   service:
     port: 9898
