@@ -3,3 +3,8 @@ kind: Kustomization
 resources:
   - ../../overlays/dev/ingress-nginx-repository.yaml
   - ../../overlays/dev/ingress-nginx-release.yaml
+  - ../../overlays/dev/prometheus-community-repository.yaml
+  - ../../overlays/dev/kube-prometheus-values-configmap.yaml
+  - ../../overlays/dev/kube-prometheus-release.yaml
+  - ../../overlays/dev/flagger-repository.yaml
+  - ../../overlays/dev/flagger-release.yaml

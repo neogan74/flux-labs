@@ -7,5 +7,6 @@ commonLabels:
   owner: platform-team
 resources:
   - ../../base
+  - canary.yaml
 patches:
   - path: patch-deployment.yaml
