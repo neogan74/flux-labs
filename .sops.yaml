@@ -1,0 +1,5 @@
+creation_rules:
+  - path_regex: gitops/infra/overlays/.*/secrets.yaml
+    encrypted_regex: "^(data|stringData)$"
+    age:
+      - age18yyy3t047y696ptkxn8vp5gs737frjys0sqv8qpcwju53ahnja7qlmeeaf
