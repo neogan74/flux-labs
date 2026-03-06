@@ -12,7 +12,7 @@ spec:
           image: ghcr.io/stefanprodan/podinfo:6.10.2 # {"$imagepolicy": "flux-system:podinfo-latest"}
           env:
             - name: PODINFO_UI_MESSAGE
-              value: "Promotion wave 2026-03-05"
+              value: "Progressive rollout 2026-03-05"
           resources:
             requests:
               cpu: 50m
