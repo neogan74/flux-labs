@@ -9,7 +9,7 @@ spec:
       serviceAccountName: team-a
       containers:
         - name: podinfo
-          image: ghcr.io/stefanprodan/podinfo:6.10.2 # {"$imagepolicy": "flux-system:podinfo-latest"}
+          image: ghcr.io/stefanprodan/podinfo:6.11.0 # {"$imagepolicy": "flux-system:podinfo-latest"}
           env:
             - name: PODINFO_UI_MESSAGE
               value: "Progressive rollout 2026-03-05"
