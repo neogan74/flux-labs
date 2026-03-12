@@ -6,6 +6,7 @@ commonLabels:
   app: podinfo
   env: stage
   owner: platform-team
+  team: platform
 resources:
   - ../../base
 patches:

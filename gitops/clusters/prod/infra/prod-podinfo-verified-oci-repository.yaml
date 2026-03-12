@@ -1,0 +1,14 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
+metadata:
+  name: prod-podinfo-signed
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: oci://ghcr.io/stefanprodan/podinfo
+  ref:
+    tag: "6.5.3"
+  verify:
+    provider: cosign
+    secretRef:
+      name: cosign-public-key

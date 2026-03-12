@@ -5,6 +5,7 @@ namePrefix: prod-
 commonLabels:
   app: podinfo
   env: prod
+  team: platform
   owner: platform-team
 resources:
   - ../../base
